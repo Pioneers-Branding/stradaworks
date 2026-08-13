@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <header class="relative w-full h-[70vh] min-h-[500px] overflow-hidden">
         <div class="absolute inset-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/gallery_tire_wall.png" class="w-full h-full object-cover" alt="Wheels and Tires">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/wheels_tires.png" class="w-full h-full object-cover" alt="Wheels and Tires">
             <div class="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent"></div>
         </div>
         <div class="relative z-10 h-full max-w-[1400px] mx-auto px-6 flex flex-col justify-center">
@@ -77,7 +77,7 @@
             </div>
             <div class="relative">
                 <div class="absolute -inset-4 bg-red-600/10 rotate-3 border border-red-600/20"></div>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/gallery_tire_wall.png"
+                <img src="<?php echo get_template_directory_uri(); ?>/images/wheels_tires.png"
                     class="relative z-10 w-full h-full object-cover border border-zinc-800" alt="Wheel Service">
             </div>
         </div>
@@ -138,9 +138,9 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Project 1 -->
                 <div class="group relative overflow-hidden border border-zinc-800 bg-zinc-900 aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1580273916550-e323be2eb244?q=80&w=2070&auto=format&fit=crop"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/gallery_wheel_closeup.png"
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                        alt="Custom Wheels">
+                        alt="Forged performance wheel">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500">
                     </div>
@@ -151,9 +151,9 @@
                 </div>
                 <!-- Project 2 -->
                 <div class="group relative overflow-hidden border border-zinc-800 bg-zinc-900 aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1619682817481-e994891cd1f5?q=80&w=2070&auto=format&fit=crop"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-wheel-alignment.jpg"
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                        alt="Track Setup">
+                        alt="Alignment head mounted for a track alignment">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500">
                     </div>
@@ -165,9 +165,9 @@
                 </div>
                 <!-- Project 3 -->
                 <div class="group relative overflow-hidden border border-zinc-800 bg-zinc-900 aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-green-calipers.jpg"
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                        alt="Caliper Painting">
+                        alt="Acid green brake calipers">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500">
                     </div>
@@ -244,7 +244,7 @@
 
     <!-- CTA -->
     <section
-        class="py-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] bg-zinc-950 relative border-t border-zinc-900">
+        class="py-20 bg-[url('<?php echo get_template_directory_uri(); ?>/images/carbon-fibre.png')] bg-zinc-950 relative border-t border-zinc-900">
         <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-black/90"></div>
         <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
             <h2 class="text-4xl md:text-6xl font-display font-bold text-white uppercase mb-8">Get A <span

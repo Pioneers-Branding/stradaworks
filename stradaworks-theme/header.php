@@ -47,7 +47,7 @@
   <nav class="fixed top-0 w-full z-50 glass-panel border-b-0 border-white/5">
     <div class="max-w-[1400px] mx-auto px-6 h-20 flex justify-between items-center">
       <a href="<?php echo home_url('/'); ?>" class="text-3xl font-display font-bold italic tracking-tighter">
-        <img src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1765975962/stradaworks-logo_e301yj.png" alt=""
+        <img src="<?php echo get_template_directory_uri(); ?>/images/stradaworks-logo.png" alt=""
           class="h-8 brightness-0 invert">
       </a>
 
@@ -130,7 +130,7 @@
           class="font-display uppercase tracking-widest hover:text-red-500 transition-colors text-sm">Work</a>
         <a href="<?php echo home_url('/#gallery'); ?>"
           class="font-display uppercase tracking-widest hover:text-red-500 transition-colors text-sm">Gallery</a>
-        <a href="<?php echo home_url('/#instagram'); ?>"
+        <a href="https://instagram.com/stradaworks" target="_blank" rel="noopener"
           class="font-display uppercase tracking-widest hover:text-red-500 transition-colors text-sm">Instagram</a>
         <a href="<?php echo home_url('/contact'); ?>"
           class="px-6 py-2 bg-red-600 hover:bg-red-700 text-white font-display uppercase tracking-widest text-sm transition-all hover:skew-x-[-10deg]">Book

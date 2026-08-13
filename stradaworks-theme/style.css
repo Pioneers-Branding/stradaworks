@@ -279,11 +279,19 @@ html {
   z-index: 40;
 }
 
-.nav-item-services:hover .mega-menu {
+.nav-item-services:hover .mega-menu,
+.nav-item-services.mega-open .mega-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
   pointer-events: auto;
+}
+
+/* Widen the hover target so the pointer doesn't fall off the narrow link text
+   on its way down to the panel. */
+.nav-item-services {
+  padding: 0 0.75rem;
+  margin: 0 -0.75rem;
 }
 
 .mega-menu-item {

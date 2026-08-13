@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <header class="relative w-full h-[70vh] min-h-[500px] overflow-hidden">
         <div class="absolute inset-0">
-            <img src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1765885556/IMG_7898_caozvf.jpg"
+            <img src="<?php echo get_template_directory_uri(); ?>/images/shop-civic-lift.jpg"
                 class="w-full h-full object-cover" alt="Suspension Work">
             <div class="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent"></div>
         </div>
@@ -332,7 +332,7 @@
 
     <!-- CTA -->
     <section
-        class="py-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] bg-zinc-950 relative border-t border-zinc-900">
+        class="py-20 bg-[url('<?php echo get_template_directory_uri(); ?>/images/carbon-fibre.png')] bg-zinc-950 relative border-t border-zinc-900">
         <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-black/90"></div>
         <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
             <h2 class="text-4xl md:text-6xl font-display font-bold text-white uppercase mb-8">Ready to <span

@@ -142,9 +142,9 @@ get_header();
              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Project 1 -->
                 <div class="group relative overflow-hidden border border-zinc-800 bg-zinc-900 aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1574755866164-50f968bd5760?q=80&w=2070&auto=format&fit=crop"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-ac-compressor.jpg"
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                        alt="AC Compressor">
+                        alt="A/C compressor and drive belt">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500">
                     </div>
@@ -156,9 +156,9 @@ get_header();
                 </div>
                  <!-- Project 2 -->
                 <div class="group relative overflow-hidden border border-zinc-800 bg-zinc-900 aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=2072&auto=format&fit=crop"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-heater-core.jpg"
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                        alt="Dash Removal">
+                        alt="Dash removed for heater core access">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500">
                     </div>
@@ -170,9 +170,9 @@ get_header();
                 </div>
                  <!-- Project 3 -->
                 <div class="group relative overflow-hidden border border-zinc-800 bg-zinc-900 aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1532585292728-6677f54c1562?q=80&w=2070&auto=format&fit=crop"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-ac-gauges.jpg"
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                        alt="Refrigerant Fill">
+                        alt="Refrigerant manifold gauges for leak testing">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500">
                     </div>
@@ -248,7 +248,7 @@ get_header();
 
     <!-- CTA -->
     <section
-         class="py-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] bg-zinc-950 relative border-t border-zinc-900">
+         class="py-20 bg-[url('<?php echo get_template_directory_uri(); ?>/images/carbon-fibre.png')] bg-zinc-950 relative border-t border-zinc-900">
         <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-black/90"></div>
         <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
             <h2 class="text-4xl md:text-6xl font-display font-bold text-white uppercase mb-8">Beat The <span

@@ -193,7 +193,7 @@ get_header();
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <!-- IG Item 1 -->
                 <a href="#" class="group relative aspect-square overflow-hidden bg-zinc-900 border border-zinc-800">
-                    <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=2069&auto=format&fit=crop"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/contact-garage-1.jpg"
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100"
                         alt="IG Post">
                     <div
@@ -223,7 +223,7 @@ get_header();
                 </a>
                 <!-- IG Item 4 -->
                 <a href="#" class="group relative aspect-square overflow-hidden bg-zinc-900 border border-zinc-800">
-                    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2000&auto=format&fit=crop"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/contact-garage-2.jpg"
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100"
                         alt="IG Post">
                     <div

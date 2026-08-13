@@ -64,7 +64,7 @@
         <!-- Brand Info -->
         <div>
           <a href="#" class="block mb-6">
-            <img src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1765975962/stradaworks-logo_e301yj.png"
+            <img src="<?php echo get_template_directory_uri(); ?>/images/stradaworks-logo.png"
               alt="Stradaworks" class="h-12 brightness-0 invert">
           </a>
           <p class="text-zinc-500 max-w-md mb-8 leading-relaxed">

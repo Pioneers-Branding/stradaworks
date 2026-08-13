@@ -1,6 +1,45 @@
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
+// Services Mega Menu
+// CSS :hover alone drops the panel the instant the pointer leaves the narrow
+// "Services" link, so moving diagonally toward a card closes it. Hold it open
+// for a grace period after the pointer leaves, and cancel that if it comes back.
+const servicesNav = document.querySelector(".nav-item-services");
+if (servicesNav) {
+  const CLOSE_DELAY = 300;
+  let closeTimer;
+
+  const openMega = () => {
+    clearTimeout(closeTimer);
+    servicesNav.classList.add("mega-open");
+  };
+  const closeMega = (immediate) => {
+    clearTimeout(closeTimer);
+    if (immediate) {
+      servicesNav.classList.remove("mega-open");
+      return;
+    }
+    closeTimer = setTimeout(
+      () => servicesNav.classList.remove("mega-open"),
+      CLOSE_DELAY,
+    );
+  };
+
+  servicesNav.addEventListener("mouseenter", openMega);
+  servicesNav.addEventListener("mouseleave", () => closeMega());
+  // Keyboard users: open while anything inside has focus.
+  servicesNav.addEventListener("focusin", openMega);
+  servicesNav.addEventListener("focusout", () => closeMega());
+  // Don't leave the panel hanging over the page after a card is clicked.
+  servicesNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => closeMega(true));
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeMega(true);
+  });
+}
+
 // Custom Cursor (Simple Follower)
 const cursor = document.getElementById("cursor");
 
@@ -105,8 +144,8 @@ function initAnimations() {
   // Animate Section Titles with Split Text Effect
   const sectionTitles = document.querySelectorAll(".section-title");
   sectionTitles.forEach((title) => {
-    // Skip animation for Instagram section title
-    if (title.closest("#instagram")) return;
+    // Skip animation for the gallery / Instagram section title
+    if (title.closest("#gallery, #instagram")) return;
 
     gsap.from(title, {
       scrollTrigger: {
@@ -166,22 +205,6 @@ function initAnimations() {
       delay: index * 0.1,
       ease: "power3.out",
     });
-  });
-
-  // Gallery Grid - Masonry Animation
-  gsap.from("#gallery img", {
-    scrollTrigger: {
-      trigger: "#gallery",
-      start: "top 80%",
-    },
-    scale: 0.8,
-    opacity: 0,
-    duration: 1.2,
-    stagger: {
-      amount: 0.8,
-      from: "random",
-    },
-    ease: "power2.out",
   });
 
   // Premium Services Cards - No animation (immediate display)
@@ -351,8 +374,8 @@ function initAnimations() {
   // Add floating animation to badges
   const badges = document.querySelectorAll(".inline-block.px-3.py-1");
   badges.forEach((badge) => {
-    // Skip animation for Instagram section badge
-    if (badge.closest("#instagram")) return;
+    // Skip animation for the gallery / Instagram section badge
+    if (badge.closest("#gallery, #instagram")) return;
 
     gsap.from(badge, {
       scrollTrigger: {
