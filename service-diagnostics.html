@@ -43,9 +43,12 @@
                     class="font-display uppercase tracking-widest hover:text-red-500 transition-colors text-sm">Home</a>
                 <a href="about.html"
                     class="font-display uppercase tracking-widest hover:text-red-500 transition-colors text-sm">About</a>
-                <div class="nav-item-services h-full flex items-center">
+                <div class="nav-item-services h-full flex items-center group/services">
                     <a href="index.html#services"
-                        class="font-display uppercase tracking-widest hover:text-red-500 transition-colors text-sm text-red-500 py-4">Services</a>
+                        class="font-display uppercase tracking-widest hover:text-red-500 transition-colors text-sm text-red-500 py-4 flex items-center gap-1.5">
+                        <span>Services</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] text-red-500 group-hover/services:rotate-180 transition-all duration-300"></i>
+                    </a>
 
                     <div class="mega-menu">
                         <div class="max-w-[1400px] mx-auto px-6 grid grid-cols-2 md:grid-cols-6 gap-4">
@@ -478,6 +481,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
     <script>
         gsap.registerPlugin(ScrollTrigger);
         const cursor = document.getElementById("cursor");

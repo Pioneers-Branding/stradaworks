@@ -54,9 +54,12 @@
       <div class="hidden md:flex items-center gap-8">
         <a href="<?php echo home_url('/about'); ?>"
           class="font-display uppercase tracking-widest hover:text-red-500 transition-colors text-sm">About</a>
-        <div class="nav-item-services h-full flex items-center">
+        <div class="nav-item-services h-full flex items-center group/services">
           <a href="<?php echo home_url('/#services'); ?>"
-            class="font-display uppercase tracking-widest hover:text-red-500 transition-colors text-sm py-4">Services</a>
+            class="font-display uppercase tracking-widest hover:text-red-500 transition-colors text-sm py-4 flex items-center gap-1.5">
+            <span>Services</span>
+            <i class="fa-solid fa-chevron-down text-[10px] text-zinc-500 group-hover/services:text-red-500 group-hover/services:rotate-180 transition-all duration-300"></i>
+          </a>
 
           <div class="mega-menu">
             <div class="max-w-[1400px] mx-auto px-6 grid grid-cols-2 md:grid-cols-6 gap-4">

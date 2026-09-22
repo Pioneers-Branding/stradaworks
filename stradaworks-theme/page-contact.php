@@ -76,16 +76,21 @@ get_header();
                     <div class="space-y-2">
                         <label class="text-xs text-zinc-500 uppercase tracking-wider font-bold">Service Interested
                             In</label>
-                        <select
-                            class="w-full bg-zinc-950 border border-zinc-800 text-zinc-400 px-4 py-3 focus:border-red-600 outline-none transition-colors appearance-none">
-                            <option>Select Service</option>
-                            <option>Automotive Repair</option>
-                            <option>Diagnostics</option>
-                            <option>Wheels & Tires</option>
-                            <option>Suspension Work</option>
-                            <option>A/C Service</option>
-                            <option>Aftermarket & Performance</option>
-                        </select>
+                        <div class="relative">
+                            <select
+                                class="w-full bg-zinc-950 border border-zinc-800 text-white px-4 py-3 pr-10 focus:border-red-600 outline-none transition-colors appearance-none cursor-pointer">
+                                <option value="" disabled selected class="text-zinc-500 bg-zinc-900">Select Service</option>
+                                <option value="repair" class="bg-zinc-900 text-white">Automotive Repair</option>
+                                <option value="diagnostics" class="bg-zinc-900 text-white">Diagnostics</option>
+                                <option value="wheels" class="bg-zinc-900 text-white">Wheels & Tires</option>
+                                <option value="suspension" class="bg-zinc-900 text-white">Suspension Work</option>
+                                <option value="ac" class="bg-zinc-900 text-white">A/C Service</option>
+                                <option value="performance" class="bg-zinc-900 text-white">Aftermarket & Performance</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-zinc-500">
+                                <i class="fa-solid fa-chevron-down text-xs"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
